@@ -33,3 +33,8 @@ function clearContent() {
 document.addEventListener("DOMContentLoaded", () => {
     initalPageLoader.loadPage();
 });
+
+// couldve had this
+// const menuBtn = document.querySelector('.menu');
+// menuBtn.addEventListener('click', loadMenu);
+// and then loadMenu be a function module that was exported in
