@@ -8,27 +8,24 @@ nav.addEventListener('click', handleNavClick, false);
 function handleNavClick(event) {
     switch(event.target.className) {
         case 'home':
-            clearModule();
+            clearContent();
             initalPageLoader.loadPage();
             break;
         case 'menu':  
-            clearModule();
+            clearContent();
             menuLoader.loadPage();  
             break;
         case 'about':
+            clearContent();
             break;
         default:
             break;
     }
 }
 
-function clearModule() {
+function clearContent() {
     const contentDiv = document.querySelector('#content');
-    console.log(contentDiv.childNodes.length);
-
-    for (let i = 0; i < contentDiv.childNodes.length; i++) {
-        contentDiv.removeChild(contentDiv.childNodes[i]);
-    }
+    contentDiv.replaceChildren();
 }
 
 document.addEventListener("DOMContentLoaded", () => {
