@@ -29,7 +29,5 @@ function clearContent() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    
-    // initalPageLoader.loadPage();
-    // menuLoader.loadPage();
+    initalPageLoader.loadPage();
 });
