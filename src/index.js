@@ -1,6 +1,7 @@
 import "./styles.css";
 import { initalPageLoader } from "./initial-page-loader.js";
 import { menuLoader } from "./menu-loader.js";
+import { aboutLoader } from "./about-loader.js";
 
 const nav = document.querySelector('header nav');
 nav.addEventListener('click', handleNavClick, false);
@@ -17,6 +18,7 @@ function handleNavClick(event) {
             break;
         case 'about':
             clearContent();
+            aboutLoader.loadPage();
             break;
         default:
             break;

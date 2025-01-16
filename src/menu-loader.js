@@ -4,7 +4,10 @@ const menuLoader = (function() {
         for (let i = 0; i < rows; i++) {
             let itemDiv = createElement('div', 'item');
             let itemNameH2 = createElement('h2', 'item-name', 'Prok Chai');
-            let itemDescriptP = createElement('p','item-description', 'A delightful fishd with red seasons and blue onions.');
+            let itemDescriptP = createElement(
+                                    'p',
+                                    'item-description', 
+                                    'A delightful fishd with red seasons and blue onions.');
             
             itemDiv.appendChild(itemNameH2);
             itemDiv.appendChild(itemDescriptP);
